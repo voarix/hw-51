@@ -11,7 +11,7 @@ const App = () => {
         const randomArr: number[] = [];
 
         while(randomArr.length < 5) {
-            const randomNumber = Math.floor(Math.random() * (33 - 5 + 1) + 1);
+            const randomNumber = Math.floor(Math.random() * (32 - 5 + 1) + 1);
 
             if (!randomArr.includes(randomNumber)) {
                 randomArr.push(randomNumber);
