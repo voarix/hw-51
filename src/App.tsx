@@ -19,15 +19,14 @@ const App = () => {
         }
 
         randomArr.sort((a, b) => a - b);
-
         setBalls(randomArr);
     };
 
     return (
         <>
             <button type='button' onClick={randomBalls}>New numbers</button>
-            <div style={{marginTop: '20px',display: 'flex', justifyContent: 'center', gap: '10px'}}>
-                {balls.map((ball) => <Ball ballNumber={ball}/>)}
+            <div className='balls-container'>
+                {balls.map((ball, index) => <Ball key={index} ballNumber={ball}/>)}
             </div>
         </>
     )
